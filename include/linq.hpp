@@ -99,8 +99,8 @@ namespace linq {
             }
             
             template <typename F>
-            auto last() {
-                return reverse().first();
+            auto last(const F &f) {
+                return reverse().first(f);
             }
             
             bool empty() {
